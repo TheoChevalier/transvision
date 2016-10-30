@@ -296,6 +296,26 @@ class ShowResults extends atoum\test
     {
         return [
             [
+                'サインインするとタブやブックマークやパスワードなどを同期できます。',
+                'Sign in to sync your tabs, bookmarks, passwords &amp; more.',
+                '',
+            ],
+            [
+                'Sign in to sync your tabs, bookmarks, passwords &amp; more.',
+                'サインインするとタブやブックマークやパスワードなどを同期できます。',
+                '',
+            ],
+            [
+                'Sign in to sync your tabs, bookmarks, passwords &amp; more',
+                'サインインするとタブやブックマークやパスワードなどを同期できます。',
+                '',
+            ],
+            [
+                'Sign in to sync your tabs, bookmarks, passwords &amp; more.',
+                'サインインするとタブやブックマークやパスワードなどを同期できます',
+                '<em class="error">No final dot?</em> ',
+            ],
+            [
                 'Le système de marque-pages et.',
                 'Le système de marque-pages et',
                 '<em class="error">No final dot?</em> ',

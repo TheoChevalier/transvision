@@ -540,10 +540,11 @@ class ShowResults
     public static function buildErrorString($source_string, $target_string)
     {
         $error_message = '';
+        $dots = ['.', '。'];
 
         // Check for final dot
-        if (substr(strip_tags($source_string), -1) == '.'
-            && substr(strip_tags($target_string), -1) != '.') {
+        if (in_array(mb_substr(strip_tags($source_string), -1), $dots)
+            && ! in_array(mb_substr(strip_tags($target_string), -1), $dots)) {
             $error_message = '<em class="error">No final dot?</em> ';
         }
 
